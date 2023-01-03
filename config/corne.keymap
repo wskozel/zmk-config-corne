@@ -162,28 +162,28 @@
 
         mac_number_layer {
             bindings = <
-  &none      &none       &none         &none         &none           &none   &none   &none          &none    &none      &none   &none
-  &none      &none  &kp C_PREV    &kp C_PLAY    &kp C_NEXT           &none  &kp N6  &kp N7         &kp N8   &kp N9     &kp N0   &none
-  &none  &kp LSHFT       &none  &kp C_VOL_DN  &kp C_VOL_UP           &mo 3   &none   &none      &kp COMMA  &kp DOT  &kp RSHFT   &none
-                                   &kp LCTRL      &kp LALT  &sm LGUI SPACE   &none   &none  &td_multi_mac
+  &none   &none       &none         &none         &none      &none      &none   &none      &none    &none      &none   &none
+  &to 0   &none  &kp C_PREV    &kp C_PLAY    &kp C_NEXT      &none     &kp N6  &kp N7     &kp N8   &kp N9     &kp N0   &none
+  &none   &none       &none  &kp C_VOL_DN  &kp C_VOL_UP      &mo 3      &none   &none  &kp COMMA  &kp DOT  &kp RSHFT   &none
+                                &kp LCTRL  &kp LEFT_GUI  &kp SPACE  &kp ENTER   &none   &kp RALT
             >;
         };
 
         mac_function_layer {
             bindings = <
-  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3   &none   &none          &none   &none    &to 4   &none
-  &none      &kp F1        &kp F2        &kp F3        &kp F4          &kp F5   &kp 6  &kp F7         &kp F8  &kp F9  &kp F10   &none
-  &none     &kp F11         &none         &none   &bootloader           &none   &none   &none          &none   &none  &kp F12   &none
-                                      &kp LCTRL      &kp LALT  &sm LGUI SPACE   &none   &none  &td_multi_mac
+  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &none  &kp KP_N7      &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY   &none
+  &none       &none         &none         &none         &none         &none   &kp KP_MINUS  &kp KP_N4      &kp KP_N5  &kp KP_N6         &kp PLUS   &none
+  &none       &none         &none         &none   &bootloader         &none  &kp KP_DIVIDE  &kp KP_N1      &kp KP_N2  &kp KP_N3     &kp KP_EQUAL   &none
+                                      &kp ENTER  &kp LEFT_GUI     &kp SPACE  &kp BACKSPACE  &kp KP_N0  &td_multi_mac
             >;
         };
 
         windows_default_layer {
             bindings = <
-  &none        &kp Q   &kp W     &kp F      &kp P      &kp G      &kp J        &kp L              &kp U    &kp Y        &kp BSPC   &none
-  &none        &kp A   &kp R     &kp S      &kp T      &kp D      &kp H        &kp N              &kp E    &kp I           &kp O   &none
-  &none  &bm LSHFT Z   &kp X     &kp C      &kp V      &kp B      &kp K        &kp M          &kp COMMA  &kp DOT  &bm RSHFT FSLH   &none
-                              &kp LALT  &kp LCTRL  &kp SPACE  &lt 5 TAB  &lt 6 ENTER  &td_multi_windows
+ &kp LS(LA(LC(NUMBER_1)))  &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))         &kp LS(LA(LC(E)))         &kp LS(LA(LC(R)))         &kp LS(LA(LC(T)))         &kp LS(LA(LC(Y)))         &kp LS(LA(LC(U)))         &kp LS(LA(LC(I)))    &kp LS(LA(LC(O)))      &kp LS(LA(LC(P)))  &kp LS(LA(LC(MINUS)))
+ &kp LS(LA(LC(NUMBER_2)))  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))         &kp LS(LA(LC(S)))         &kp LS(LA(LC(D)))         &kp LS(LA(LC(G)))         &kp LS(LA(LC(H)))         &kp LS(LA(LC(J)))         &kp LS(LA(LC(K)))    &kp LS(LA(LC(L)))                  &none                  &none
+ &kp LS(LA(LC(NUMBER_3)))  &kp LS(LA(LC(Z)))  &kp LS(LA(LC(X)))         &kp LS(LA(LC(C)))         &kp LS(LA(LC(V)))         &kp LS(LC(LA(B)))         &kp LS(LA(LC(N)))         &kp LS(LA(LC(M)))     &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LA(LC(SLASH)))                  &none
+                                                                 &kp LS(LA(LC(NUMBER_4)))  &kp LS(LA(LC(NUMBER_5)))  &kp LS(LA(LC(NUMBER_6)))  &kp LS(LA(LC(NUMBER_7)))  &kp LS(LA(LC(NUMBER_8)))  &kp LS(LA(LC(NUMBER_9)))
             >;
         };
 
