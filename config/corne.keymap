@@ -139,6 +139,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&kp LA(F)>;
+            key-positions = <14 16>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
