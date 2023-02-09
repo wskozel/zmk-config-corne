@@ -5,14 +5,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 
-&mmv {    
-        time-to-max-speed-ms = <500>;
-        acceleration-exponent=<1>;
-};
-&mwh {    
-        time-to-max-speed-ms = <2000>;
-        acceleration-exponent=<0>;
-}; 
+
 
 // Layers
 
@@ -24,6 +17,16 @@
 #define WIN_CODE 5
 #define WIN_NUM 6
 #define WIN_FUNC 7
+
+
+&mmv {    
+        time-to-max-speed-ms = <500>;
+        acceleration-exponent=<1>;
+};
+&mwh {    
+        time-to-max-speed-ms = <2000>;
+        acceleration-exponent=<0>;
+}; 
 
 // Behavior Overrides
 
