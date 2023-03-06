@@ -233,7 +233,7 @@
         windows_code_layer {
             bindings = <
 &none   &kp F1   &kp F2    &kp F3        &kp F4     &kp F5          &bt BT_CLR                   &mkp LCLK               &mmv MOVE_VERT(-2500)               &mkp RCLK               &bt BT_SEL 0   &none
-&none   &kp F6   &kp F7    &kp F8        &kp F9    &kp F10           &out OUT_TOGGLE                 &mmv MOVE_HOR(-2500)    &mmv MOVE_VERT(2500)       &mmv MOVE_HOR(2500)              &bt BT_SEL 1         &none
+&none   &kp F6   &kp F7    &kp F8        &kp F9    &kp F10           &out OUT_TOG                 &mmv MOVE_HOR(-2500)    &mmv MOVE_VERT(2500)       &mmv MOVE_HOR(2500)              &bt BT_SEL 1         &none
 &none  &kp F11  &kp F12   &kp F13       &kp F14    &kp F15           &mwh SCROLL_HOR(-15)   &mwh SCROLL_VERT(-15)   &mwh SCROLL_VERT(15)    &mwh SCROLL_HOR(15)                 &bt BT_SEL 2        &none
                          &kp LALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &none  &none
             >;
