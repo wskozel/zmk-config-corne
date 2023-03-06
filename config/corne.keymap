@@ -196,7 +196,7 @@
 
         mac_code_layer {
             bindings = <
-&none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RA(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RA(RIGHT)       &kp PLUS  &none
+&none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RA(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RA(RIGHT)       &kp MINUS  &none
 &none     &trans   &kp AMPERSAND           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp LEFT       &kp DOWN         &kp UP      &kp RIGHT       &kp SEMI  &none
 &none  &kp CARET  &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP        &kp END  &kp BACKSLASH  &none
                                   &mt LALT BACKSPACE          &mt LGUI DEL   &mt LEFT_SHIFT SPACE       &kp DEL       &kp RALT        &kp TAB
@@ -232,9 +232,9 @@
 
         windows_code_layer {
             bindings = <
-&none   &kp F1   &kp F2    &kp F3        &kp F4     &kp F5          &none  &mkp LCLK   &mkp MCLK  &mkp RCLK &none  &none
-&none   &kp F6   &kp F7    &kp F8        &kp F9    &kp F10          &mmv MOVE_HOR(-2500)   &mmv MOVE_VERT(2500)   &mmv MOVE_VERT(-2500)   &mmv MOVE_HOR(2500)  &none
-&none  &kp F11  &kp F12   &kp F13       &kp F14    &kp F15           &mwh SCROLL_HOR(-15) &mwh SCROLL_VERT(-15) &mwh SCROLL_VERT(15) &mwh SCROLL_HOR(15)  &none
+&none   &kp F1   &kp F2    &kp F3        &kp F4     &kp F5          &bt BT_CLR                   &mkp LCLK               &mmv MOVE_VERT(-2500)               &mkp RCLK               &bt BT_SEL 0  
+&none   &kp F6   &kp F7    &kp F8        &kp F9    &kp F10           &none                 &mmv MOVE_HOR(-2500)    &mmv MOVE_VERT(2500)       &mmv MOVE_HOR(2500)              &bt BT_SEL 1
+&none  &kp F11  &kp F12   &kp F13       &kp F14    &kp F15           &mwh SCROLL_HOR(-15)   &mwh SCROLL_VERT(-15)   &mwh SCROLL_VERT(15)    &mwh SCROLL_HOR(15)                 &bt BT_SEL 2
                          &kp LALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &none  &none
             >;
         };
