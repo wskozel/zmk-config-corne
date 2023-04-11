@@ -190,7 +190,7 @@
 &none    &kp Q  &kp W           &kp E         &kp R                 &kp T          &kp Y         &kp U         &kp I         &kp O             &kp P  &none
 &none  &lt 1 A  &kp S           &kp D         &kp F                 &kp G          &kp H         &kp J         &kp K         &kp L  &lt 4 APOSTROPHE  &none
 &none  &lt 3 Z  &kp X           &kp C         &kp V                 &kp B          &kp N         &kp M     &kp COMMA  &lt 5 PERIOD   &mt RGUI SLASH  &none
-                       &mt LALT ENTER  &mt LCTRL ESC  &mt LEFT_SHIFT SPACE  &lt 5 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
+                       &mt LALT ENTER  &mt LCTRL ESC  &mt LSHIFT SPACE  &lt 5 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
             >;
         };
 
@@ -199,7 +199,7 @@
 &none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RC(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RC(RIGHT)       &kp MINUS  &none
 &none     &trans   &kp AMPERSAND           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp LEFT       &kp DOWN         &kp UP      &kp RIGHT       &kp SEMI  &none
 &none  &kp CARET  &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP        &kp END  &kp BACKSLASH  &none
-                                  &mt LALT BACKSPACE          &mt LCTRL DEL   &mt LEFT_SHIFT SPACE       &kp DEL       &kp RALT        &kp TAB
+                                  &mt LALT BACKSPACE          &mt LCTRL DEL   &mt LSHIFT SPACE       &kp DEL       &kp RALT        &kp TAB
             >;
         };
 
@@ -208,7 +208,7 @@
 &none    &kp Q  &kp W           &kp E          &kp R                 &kp T            &kp Y         &kp U         &kp I         &kp O            &kp P  &none
 &none  &lt 1 A  &kp S           &kp D          &kp F                 &kp G            &kp H         &kp J         &kp K         &kp L       &lt 4 SEMI  &none
 &none  &lt 3 Z  &kp X           &kp C          &kp V                 &kp B            &kp N         &kp M     &kp COMMA  &lt 5 PERIOD  &mt RGUI SLASH  &none
-                       &mt LALT ENTER  &mt LGUI ESC  &mt LEFT_SHIFT SPACE  &lt 3 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
+                       &mt LALT ENTER  &mt LGUI ESC  &mt LSHIFT SPACE  &lt 3 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
             >;
         };
 
@@ -217,7 +217,7 @@
 &none       &none    &none       &none               &bt BT_CLR                 &out OUT_USB       &kp TILDE  &kp N7      &kp N8  &kp N9  &kp MINUS  &none
 &none       &none    &kp C_PREV  &kp C_PLAY_PAUSE    &kp C_NEXT             &none      &kp MINUS  &kp N4      &kp N5  &kp N6   &kp PLUS  &none
 &none       &none    &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP             &none      &kp SLASH  &kp N1      &kp N2  &kp N3  &kp EQUAL  &none
-                                        &kp ENTER  &kp LEFT_CTRL  &mt LEFT_SHIFT SPACE  &kp BACKSPACE  &kp N0  &kp DELETE
+                                        &kp ENTER  &mt LCTRL ESC  &mt LSHIFT SPACE  &kp BACKSPACE  &kp N0  &kp DELETE
             >;
         };
 
@@ -235,7 +235,7 @@
 &none   &kp F1   &kp F2    &kp F3        &kp F4     &kp F5          &bt BT_SEL 3                   &mkp LCLK               &mmv MOVE_VERT(-2500)               &mkp RCLK               &bt BT_SEL 0   &none
 &none   &kp F6   &kp F7    &kp F8        &kp F9    &kp F10           &out OUT_TOG                 &mmv MOVE_HOR(-2500)    &mmv MOVE_VERT(2500)       &mmv MOVE_HOR(2500)              &bt BT_SEL 1         &none
 &none  &kp F11  &kp F12   &kp F13       &kp F14    &kp F15           &mwh SCROLL_HOR(-15)   &mwh SCROLL_VERT(-15)   &mwh SCROLL_VERT(15)    &mwh SCROLL_HOR(15)                 &bt BT_SEL 2        &none
-                         &kp LALT  &kp LEFT_CTRL  &kp SPACE  &kp BACKSPACE  &none  &none
+                         &kp LALT  &kp LCTRL  &kp SPACE  &kp BACKSPACE  &none  &none
             >;
         };
 
