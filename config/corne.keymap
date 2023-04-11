@@ -196,7 +196,7 @@
 
         mac_code_layer {
             bindings = <
-&none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RA(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RA(RIGHT)       &kp MINUS  &none
+&none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RC(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RC(RIGHT)       &kp MINUS  &none
 &none     &trans   &kp AMPERSAND           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp LEFT       &kp DOWN         &kp UP      &kp RIGHT       &kp SEMI  &none
 &none  &kp CARET  &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP        &kp END  &kp BACKSLASH  &none
                                   &mt LALT BACKSPACE          &mt LCTRL DEL   &mt LEFT_SHIFT SPACE       &kp DEL       &kp RALT        &kp TAB
@@ -225,8 +225,8 @@
             bindings = <
 &none  &kp LC(LS(LG(LA(Q))))  &kp LC(LS(LG(LA(W))))         &kp LC(LS(LG(LA(E))))         &kp LC(LS(LG(LA(R))))         &kp LC(LS(LG(LA(T))))         &kp LC(LS(LG(LA(Y))))         &kp LC(LS(LG(LA(U))))         &kp LC(LS(LG(LA(I))))    &kp LC(LS(LG(LA(O))))      &kp LC(LS(LG(LA(P))))  &none
 &none  &kp LC(LS(LG(LA(A))))  &kp LC(LS(LG(LA(S))))         &kp LC(LS(LG(LA(D))))         &kp LC(LS(LG(LA(F))))         &kp LC(LS(LG(LA(G))))         &kp LC(LS(LG(LA(H))))         &kp LC(LS(LG(LA(J))))         &kp LC(LS(LG(LA(K))))    &kp LC(LS(LG(LA(L))))                  &none  &none
-&none  &kp LC(LS(LG(LA(Z))))  &kp LC(LS(LG(LA(X))))         &kp LC(LS(LG(LA(C))))         &kp LC(LS(LG(LA(V))))         &kp LS(LC(LA(B))))         &kp LC(LS(LG(LA(N))))         &kp LC(LS(LG(LA(M))))     &kp LC(LS(LG(LA(COMMA))))  &kp LC(LS(LG(LA(DOT))))  &kp LC(LS(LG(LA(SLASH))))  &none
-                                             &kp LC(LS(LG(LA(NUMBER_4))))  &kp LC(LS(LG(LA(NUMBER_5))))  &kp LC(LS(LG(LA(NUMBER_6))))  &kp LC(LS(LG(LA(NUMBER_7))))  &kp LC(LS(LG(LA(NUMBER_8))))  &kp LC(LS(LG(LA(NUMBER_9)))
+&none  &kp LC(LS(LG(LA(Z))))  &kp LC(LS(LG(LA(X))))         &kp LC(LS(LG(LA(C))))         &kp LC(LS(LG(LA(V))))         &kp LC(LS(LG(LA(B))))         &kp LC(LS(LG(LA(N))))         &kp LC(LS(LG(LA(M))))     &kp LC(LS(LG(LA(COMMA))))  &kp LC(LS(LG(LA(DOT))))  &kp LC(LS(LG(LA(SLASH))))  &none
+                                             &kp LC(LS(LG(LA(NUMBER_4))))  &kp LC(LS(LG(LA(NUMBER_5))))  &kp LC(LS(LG(LA(NUMBER_6))))  &kp LC(LS(LG(LA(NUMBER_7))))  &kp LC(LS(LG(LA(NUMBER_8))))  &kp LC(LS(LG(LA(NUMBER_9))))
             >;
         };
 
