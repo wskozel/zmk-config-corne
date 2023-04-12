@@ -57,11 +57,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LGUI>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LGUI>;
         };
 
         // Emoji
@@ -72,15 +72,15 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_press>,
                 <&kp LGUI>,
+                <&macro_press>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LGUI>,
+                <&kp LCTRL>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LGUI>;
         };
         win_emoji: win_emoji {
             label = "win_emoji";
@@ -88,11 +88,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LGUI>,
                 <&macro_tap>,
                 <&kp DOT>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LGUI>;
         };
     };
 
@@ -114,7 +114,7 @@
             tapping-term-ms = <200>;
             bindings =
                 <&kp ESC>,
-                <&kp LCTRL>,
+                <&kp LGUI>,
                 <&win_emoji>;
         };
         bm: bottom_row_mods {
@@ -189,17 +189,17 @@
             bindings = <
 &none    &kp Q  &kp W           &kp E         &kp R                 &kp T          &kp Y         &kp U         &kp I         &kp O             &kp P  &none
 &none  &lt 1 A  &kp S           &kp D         &kp F                 &kp G          &kp H         &kp J         &kp K         &kp L  &lt 4 APOSTROPHE  &none
-&none  &lt 3 Z  &kp X           &kp C         &kp V                 &kp B          &kp N         &kp M     &kp COMMA  &lt 5 PERIOD   &mt RGUI SLASH  &none
-EE                       &mt LALT ENTER  &mt LCTRL ESC  &mt LSHIFT SPACE  &lt 5 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
+&none  &lt 3 Z  &kp X           &kp C         &kp V                 &kp B          &kp N         &kp M     &kp COMMA  &lt 5 PERIOD   &mt RCTRL SLASH  &none
+                       &mt LALT ENTER  &mt LGUI ESC  &mt LEFT_SHIFT SPACE  &lt 5 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
             >;
         };
 
         mac_code_layer {
             bindings = <
-&none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RC(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RC(RIGHT)       &kp MINUS  &none
+&none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RA(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RA(RIGHT)       &kp MINUS  &none
 &none     &trans   &kp AMPERSAND           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp LEFT       &kp DOWN         &kp UP      &kp RIGHT       &kp SEMI  &none
 &none  &kp CARET  &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP        &kp END  &kp BACKSLASH  &none
-                                  &mt LALT BACKSPACE          &mt LCTRL DEL   &mt LSHIFT SPACE       &kp DEL       &kp RALT        &kp TAB
+                                  &mt LALT BACKSPACE          &mt LGUI DEL   &mt LEFT_SHIFT SPACE       &kp DEL       &kp RALT        &kp TAB
             >;
         };
 
@@ -207,35 +207,35 @@ EE                       &mt LALT ENTER  &mt LCTRL ESC  &mt LSHIFT SPACE  &lt 5 
             bindings = <
 &none    &kp Q  &kp W           &kp E          &kp R                 &kp T            &kp Y         &kp U         &kp I         &kp O            &kp P  &none
 &none  &lt 1 A  &kp S           &kp D          &kp F                 &kp G            &kp H         &kp J         &kp K         &kp L       &lt 4 SEMI  &none
-&none  &lt 3 Z  &kp X           &kp C          &kp V                 &kp B            &kp N         &kp M     &kp COMMA  &lt 5 PERIOD  &mt RGUI SLASH  &none
-                       &mt LALT ENTER  &mt LGUI ESC  &mt LSHIFT SPACE  &lt 3 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
+&none  &lt 3 Z  &kp X           &kp C          &kp V                 &kp B            &kp N         &kp M     &kp COMMA  &lt 5 PERIOD  &mt RCTRL SLASH  &none
+                       &mt LALT ENTER  &mt LCTRL ESC  &mt LEFT_SHIFT SPACE  &lt 3 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
             >;
         };
 
         mac_function_layer {
             bindings = <
-&none       &none    &none       &none               &bt BT_CLR                 &out OUT_USB       &kp TILDE  &kp N7      &kp N8  &kp N9  &kp MINUS  &none
+&none       &none    &none       &none               &none                 &out OUT_USB       &kp TILDE  &kp N7      &kp N8  &kp N9  &kp MINUS  &none
 &none       &none    &kp C_PREV  &kp C_PLAY_PAUSE    &kp C_NEXT             &none      &kp MINUS  &kp N4      &kp N5  &kp N6   &kp PLUS  &none
 &none       &none    &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP             &none      &kp SLASH  &kp N1      &kp N2  &kp N3  &kp EQUAL  &none
-                                        &kp ENTER  &mt LCTRL ESC  &mt LSHIFT SPACE  &kp BACKSPACE  &kp N0  &kp DELETE
+                                        &kp ENTER  &kp LEFT_GUI  &mt LSHIFT SPACE  &kp BACKSPACE  &kp N0  &td_multi_mac
             >;
         };
 
         windows_default_layer {
             bindings = <
-&none  &kp RS(Q)  &kp RS(W)         &kp RS(E)         &kp RS(R)         &kp RS(T)         &kp RS(Y)         &kp RS(U)         &kp RS(I)    &kp RS(O)      &kp RS(P)  &none
-&none  &kp RS(A)  &kp RS(S)         &kp RS(D)         &kp RS(F)         &kp RS(G)         &kp RS(H)         &kp RS(J)         &kp RS(K)    &kp RS(L)                  &none  &none
-&none  &kp RS(Z)  &kp RS(X)         &kp RS(C)         &kp RS(V)         &kp RS(B)         &kp RS(N)         &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)  &kp RS(SLASH)  &none
-                                             &kp RS(NUMBER_4)  &kp RS(NUMBER_5)  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)
+&none  &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))         &kp LS(LA(LC(E)))         &kp LS(LA(LC(R)))         &kp LS(LA(LC(T)))         &kp LS(LA(LC(Y)))         &kp LS(LA(LC(U)))         &kp LS(LA(LC(I)))    &kp LS(LA(LC(O)))      &kp LS(LA(LC(P)))  &none
+&none  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))         &kp LS(LA(LC(D)))         &kp LS(LA(LC(F)))         &kp LS(LA(LC(G)))         &kp LS(LA(LC(H)))         &kp LS(LA(LC(J)))         &kp LS(LA(LC(K)))    &kp LS(LA(LC(L)))                  &none  &none
+&none  &kp LS(LA(LC(Z)))  &kp LS(LA(LC(X)))         &kp LS(LA(LC(C)))         &kp LS(LA(LC(V)))         &kp LS(LC(LA(B)))         &kp LS(LA(LC(N)))         &kp LS(LA(LC(M)))     &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LA(LC(SLASH)))  &none
+                                             &kp LS(LA(LC(NUMBER_4)))  &kp LS(LA(LC(NUMBER_5)))  &kp LS(LA(LC(NUMBER_6)))  &kp LS(LA(LC(NUMBER_7)))  &kp LS(LA(LC(NUMBER_8)))  &kp LS(LA(LC(NUMBER_9)))
             >;
         };
 
         windows_code_layer {
             bindings = <
-&none   &kp F1   &kp F2    &kp F3        &kp F4     &kp F5          &bt BT_SEL 3                   &mkp LCLK               &mmv MOVE_VERT(-2500)               &mkp RCLK               &bt BT_SEL 0   &none
+&none   &kp F1   &kp F2    &kp F3        &kp F4     &kp F5          &bt BT_CLR                   &mkp LCLK               &mmv MOVE_VERT(-2500)               &mkp RCLK               &bt BT_SEL 0   &none
 &none   &kp F6   &kp F7    &kp F8        &kp F9    &kp F10           &out OUT_TOG                 &mmv MOVE_HOR(-2500)    &mmv MOVE_VERT(2500)       &mmv MOVE_HOR(2500)              &bt BT_SEL 1         &none
 &none  &kp F11  &kp F12   &kp F13       &kp F14    &kp F15           &mwh SCROLL_HOR(-15)   &mwh SCROLL_VERT(-15)   &mwh SCROLL_VERT(15)    &mwh SCROLL_HOR(15)                 &bt BT_SEL 2        &none
-                         &kp LALT  &kp LCTRL  &kp SPACE  &kp BACKSPACE  &none  &none
+                         &kp LALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &none  &none
             >;
         };
 
@@ -244,7 +244,7 @@ EE                       &mt LALT ENTER  &mt LCTRL ESC  &mt LSHIFT SPACE  &lt 5 
 &none   &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS       &kp ASTERISK  &kp CAPS   &kp BSPC  &none
 &none     &kp N1  &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7             &kp N8    &kp N9     &kp N0  &none
 &none  &kp LSHFT   &none     &none      &none      &mo 7      &none     &none          &kp COMMA   &kp DOT  &kp RSHFT  &none
-                          &kp LALT  &kp LGUI  &kp SPACE      &none     &none  &td_multi_windows
+                          &kp LALT  &kp LCTRL  &kp SPACE      &none     &none  &td_multi_windows
             >;
         };
 
@@ -253,7 +253,7 @@ EE                       &mt LALT ENTER  &mt LCTRL ESC  &mt LSHIFT SPACE  &lt 5 
 &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none   &none              &none   &none    &to 0  &none
 &none      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &kp 6  &kp F7             &kp F8  &kp F9  &kp F10  &none
 &none     &kp F11         &none         &none   &bootloader         &none  &none   &none              &none   &none  &kp F12  &none
-                                     &kp LALT     &kp LGUI     &kp SPACE  &none   &none  &td_multi_windows
+                                     &kp LALT     &kp LCTRL     &kp SPACE  &none   &none  &td_multi_windows
             >;
         };
     };
