@@ -158,17 +158,17 @@
         compatible = "zmk,combos";
 
         Launcher {
-            bindings = <&kp LG(LS(F)))>;
+            bindings = <&kp LG(LS(F))>;
             key-positions = <37 18>;
             layers = <0>;
         };
         ClipHistory {
-            bindings = <&kp LG(LS(V)))>;
+            bindings = <&kp LG(LS(V))>;
             key-positions = <37 19>;
             layers = <0>;
         };
         BW {
-            bindings = <&kp LG(LS(B)))>;
+            bindings = <&kp LG(LS(B))>;
             key-positions = <37 22>;
             layers = <0>;
         };
