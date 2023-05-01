@@ -157,9 +157,19 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
-            bindings = <&kp LA(F)>;
-            key-positions = <14 16>;
+        Launcher {
+            bindings = <&kp LG(LS(F)))>;
+            key-positions = <37 18>;
+            layers = <0>;
+        };
+        ClipHistory {
+            bindings = <&kp LG(LS(V)))>;
+            key-positions = <37 19>;
+            layers = <0>;
+        };
+        BW {
+            bindings = <&kp LG(LS(B)))>;
+            key-positions = <37 22>;
             layers = <0>;
         };
 
@@ -196,7 +206,7 @@
 
         mac_code_layer {
             bindings = <
-&none   &kp EXCL          &kp AT            &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RA(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RA(RIGHT)       &kp MINUS  &none
+&none   &kp EXCL          &kp AT        z    &kp HASH            &kp DOLLAR            &kp PERCENT  &kp RA(LEFT)   &kp RG(LEFT)  &kp RG(RIGHT)  &kp RA(RIGHT)       &kp MINUS  &none
 &none     &trans   &kp AMPERSAND           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp LEFT       &kp DOWN         &kp UP      &kp RIGHT       &kp SEMI  &none
 &none  &kp CARET  &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP        &kp END  &kp BACKSLASH  &none
                                   &mt LALT BACKSPACE          &mt LGUI DEL   &mt LEFT_SHIFT SPACE       &kp DEL       &kp RALT        &kp TAB
