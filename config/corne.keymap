@@ -5,20 +5,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 
-
-
-// Layers
-
-#define MAC 0
-#define MAC_CODE 1
-#define UN_NUM 2
-#define MAC_FUNC 3
-#define WIN 4
-#define WIN_CODE 5
-#define WIN_NUM 6
-#define WIN_FUNC 7
-
-
 &mmv {    
         time-to-max-speed-ms = <500>;
         acceleration-exponent=<1>;
