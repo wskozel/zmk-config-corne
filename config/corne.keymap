@@ -50,52 +50,7 @@
     //};
     //};
 
-    macros {
-        spotlight: spotlight {
-            label = "spotlight";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-
-        // Emoji
-
-        mac_emoji: mac_emoji {
-            label = "mac_emoji";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp SPACE>,
-                <&macro_release>,
-                <&kp LCTRL>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-        win_emoji: win_emoji {
-            label = "win_emoji";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp DOT>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-    };
-
+   
     behaviors {
         td_multi_mac: tap_dance_multi_mac {
             compatible = "zmk,behavior-tap-dance";
