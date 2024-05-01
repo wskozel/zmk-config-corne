@@ -7,18 +7,6 @@
 
 
 
-// Layers
-
-#define MAC 0
-#define MAC_CODE 1
-#define UN_NUM 2
-#define MAC_FUNC 3
-#define WIN 4
-#define WIN_CODE 5
-#define WIN_NUM 6
-#define WIN_FUNC 7
-
-
 &mmv {    
         time-to-max-speed-ms = <500>;
         acceleration-exponent=<1>;
@@ -35,22 +23,6 @@
     flavor = "balanced";
 };
 
-/ {
-    //combos {
-    //  compatible = "zmk,combos";
-    //combo_tab {
-    //  timeout-ms = <20>;
-    //  key-positions = <1 2>;
-    //  bindings = <&kp TAB>;
-    //};
-    //  combo_enter {
-    //    timeout-ms = <20>;
-    //  key-positions = <13 14>;
-    //bindings = <&kp ENTER>;
-    //};
-    //};
-
-  
     behaviors {
           bm: bottom_row_mods {
             compatible = "zmk,behavior-hold-tap";
