@@ -37,6 +37,12 @@
 };
 
 / {
+  chosen {
+    zmk,matrix_transform = &five_column_transform;
+  };
+};
+
+/ {
     //combos {
     //  compatible = "zmk,combos";
     //combo_tab {
@@ -50,11 +56,7 @@
     //bindings = <&kp ENTER>;
     //};
     //};
- {
-  chosen {
-    zmk,matrix_transform = &five_column_transform;
-  };
-};
+
     behaviors {
           bm: bottom_row_mods {
             compatible = "zmk,behavior-hold-tap";
