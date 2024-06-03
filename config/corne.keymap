@@ -117,11 +117,7 @@
             layers = <0>;
         };
 
-        new_combo {
-            bindings = <&kp ESC>;
-            key-positions = <1 37>;
-        };
-    };
+   };
 
     keymap {
         compatible = "zmk,keymap";
