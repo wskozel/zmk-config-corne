@@ -1,0 +1,53 @@
+{
+  "keyboard": "wsKorne",
+  "keymap": "",
+  "layout": "",
+  "layer_names": [
+    "mac_default_layer",
+    "mac_code_layer",
+    "unused_layer",
+    "mac_function_layer",
+    "windows_default_layer",
+    "windows_code_layer",
+    "windows_number_layer",
+    "windows_function_layer"
+  ],
+  "layers": [
+    [
+        "&kp Q", "&kp W", "&kp E", "&kp R", "&kp T", "&kp Y", "&kp U", "&kp I", "&kp O", "&kp P",
+        "&lt 1 A", "&kp S", "&kp D", "&kp F", "&kp G", "&kp H", "&kp J", "&kp K", "&kp L", "&lt 4 APOSTROPHE",
+        "&lt 3 Z", "&kp X", "&kp C", "&kp V", "&kp B", "&kp N", "&kp M", "&kp COMMA", "&lt 5 PERIOD", "&mt RCTRL SLASH",
+        "&mt LALT ENTER", "&mt LGUI ESC", "&mt LEFT_SHIFT SPACE", "&lt 5 BACKSPACE", "&mt RALT DEL", "&mt RCMD TAB"
+      ],
+      [
+        "&kp EXCL", "&kp AT", "&kp HASH", "&kp DOLLAR", "&kp PERCENT", "&kp RA(LEFT)", "&kp RG(LEFT)", "&kp RG(RIGHT)", "&kp RA(RIGHT)", "&kp MINUS",
+        "&trans", "&kp AMPERSAND", "&kp ASTRK", "&kp LEFT_PARENTHESIS", "&kp RIGHT_PARENTHESIS", "&kp LEFT", "&kp DOWN", "&kp UP", "&kp RIGHT", "&kp SEMI",
+        "&kp CARET", "&kp LEFT_BRACE", "&kp RIGHT_BRACE", "&kp LEFT_BRACKET", "&kp RIGHT_BRACKET", "&kp HOME", "&kp PAGE_DOWN", "&kp PAGE_UP", "&kp END", "&kp BACKSLASH",
+        "&mt LALT BACKSPACE", "&mt LGUI DEL", "&mt LEFT_SHIFT SPACE", "&kp DEL", "&kp RALT", "&kp TAB"
+      ],
+      [
+        "&kp Q", "&kp W", "&kp E", "&kp R", "&kp T", "&kp Y", "&kp U", "&kp I", "&kp O", "&kp P",
+        "&lt 1 A", "&kp S", "&kp D", "&kp F", "&kp G", "&kp H", "&kp J", "&kp K", "&kp L", "&lt 4 SEMI",
+        "&lt 3 Z", "&kp X", "&kp C", "&kp V", "&kp B", "&kp N", "&kp M", "&kp COMMA", "&lt 5 PERIOD", "&mt RCTRL SLASH",
+        "&mt LALT ENTER", "&mt LCTRL ESC", "&mt LEFT_SHIFT SPACE", "&lt 3 BACKSPACE", "&mt RALT DEL", "&mt RCMD TAB"
+      ],
+      [
+        "&trans", "&trans", "&trans", "&trans", "&trans", "&kp TILDE", "&kp N7", "&kp N8", "&kp N9", "&kp MINUS",
+        "&trans", "&kp C_PREV", "&kp C_PLAY_PAUSE", "&kp C_NEXT", "&trans", "&kp MINUS", "&kp N4", "&kp N5", "&kp N6", "&kp PLUS",
+        "&trans", "&kp C_MUTE", "&kp C_VOL_DN", "&kp C_VOL_UP", "&trans", "&kp SLASH", "&kp N1", "&kp N2", "&kp N3", "&kp EQUAL",
+        "&kp ENTER", "&kp LEFT_GUI", "&mt LSHIFT SPACE", "&kp BACKSPACE", "&kp N0", "&trans"
+      ],
+[
+        "&kp LS(LA(LC(Q)))", "&kp LS(LA(LC(W)))", "&kp LS(LA(LC(E)))", "&kp LS(LA(LC(R)))", "&kp LS(LA(LC(T)))", "&kp LS(LA(LC(Y)))", "&kp LS(LA(LC(U)))", "&kp LS(LA(LC(I)))", "&kp LS(LA(LC(O)))", "&kp LS(LA(LC(P)))",
+        "&kp LS(LA(LC(A)))", "&kp LS(LA(LC(S)))", "&kp LS(LA(LC(D)))", "&kp LS(LA(LC(F)))", "&kp LS(LA(LC(G)))", "&kp LS(LA(LC(H)))", "&kp LS(LA(LC(J)))", "&kp LS(LA(LC(K)))", "&kp LS(LA(LC(L)))",
+        "&kp LS(LA(LC(Z)))", "&kp LS(LA(LC(X)))", "&kp LS(LA(LC(C)))", "&kp LS(LA(LC(V)))", "&kp LS(LC(LA(B)))", "&kp LS(LA(LC(N)))", "&kp LS(LA(LC(M)))", "&kp LS(LA(LC(COMMA)))", "&kp LS(LA(LC(DOT)))", "&kp LS(LA(LC(SLASH)))",
+        "&kp LS(LA(LC(NUMBER_4)))", "&kp LS(LA(LC(NUMBER_5)))", "&kp LS(LA(LC(NUMBER_6)))", "&kp LS(LA(LC(NUMBER_7)))", "&kp LS(LA(LC(NUMBER_8)))", "&kp LS(LA(LC(NUMBER_9)))"
+      ],
+ [
+        "&kp F1", "&kp F2", "&kp F3", "&kp F4", "&kp F5", "&bt BT_CLR", "&trans", "&trans", "&trans", "&bt BT_SEL 0",
+        "&kp F6", "&kp F7", "&kp F8", "&kp F9", "&kp F10", "&bt BT_SEL 0", "&trans", "&trans", "&trans", "&bt BT_SEL 1",
+        "&kp F11", "&kp F12", "&kp F13", "&kp F14", "&kp F15", "&trans", "&trans", "&trans", "&trans", "&bt BT_SEL 2",
+        "&kp LALT", "&kp LEFT_GUI", "&kp SPACE", "&kp BACKSPACE", "&trans", "&trans"
+      ]
+  ]
+}
