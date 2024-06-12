@@ -110,7 +110,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TDYABAIQOUTEGRAVE";
             #binding-cells = <0>;
-            bindings = <&lt 3 SQT>, <&kp GRAVE>;
+            bindings = <&lt 3 SQT>, <&tog 3>;
+
+            tapping-term-ms = <150>;
         };
 
         tdSpaceShiftCaps: tdSpaceShiftCaps {
@@ -118,58 +120,6 @@
             label = "TDSPACESHIFTCAPS";
             #binding-cells = <0>;
             bindings = <&mt LSHIFT SPACE>, <&caps_word>;
-        };
-
-        tdBF13: tdBF13 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDBF13";
-            #binding-cells = <0>;
-            bindings = <&kp B>, <&kp F13>;
-
-            tapping-term-ms = <100>;
-        };
-
-        tdVF14: tdVF14 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDVF14";
-            #binding-cells = <0>;
-            bindings = <&kp V>, <&kp F14>;
-
-            tapping-term-ms = <100>;
-        };
-
-        tdGF15: tdGF15 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDGF15";
-            #binding-cells = <0>;
-            bindings = <&kp G>, <&kp F15>;
-
-            tapping-term-ms = <100>;
-        };
-
-        tdFF16: tdFF16 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDFF16";
-            #binding-cells = <0>;
-            bindings = <&kp F>, <&kp F16>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tdTF17: tdTF17 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDTF17";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp F17>;
-        };
-
-        tdWF18: tdWF18 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDWF18";
-            #binding-cells = <0>;
-            bindings = <&kp W>, <&kp F18>;
-
-            tapping-term-ms = <100>;
         };
     };
 
@@ -201,19 +151,19 @@
 
         mac_default_layer {
             bindings = <
-  &kp Q    &tdWF18  &kp E           &kp R         &kp T                   &kp Y            &kp U         &kp I         &kp O         &kp P
-  &lt 1 A  &kp S    &kp D           &kp F         &kp G                   &kp H            &kp J         &kp K         &kp L         &tdYabaiQouteGrave
-  &lt 2 Z  &kp X    &kp C           &kp V         &kp B                   &kp N            &kp M         &kp COMMA     &lt 4 PERIOD  &mt RCTRL SLASH
-                    &mt LALT ENTER  &mt LGUI ESC  &mt LEFT_SHIFT SPACE    &lt 1 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
+  &kp Q    &none  &kp E           &kp R         &kp T                   &kp Y            &kp U         &kp I         &kp O         &kp P
+  &lt 1 A  &kp S  &kp D           &kp F         &kp G                   &kp H            &kp J         &kp K         &kp L         &tdYabaiQouteGrave
+  &lt 2 Z  &kp X  &kp C           &kp V         &kp B                   &kp N            &kp M         &kp COMMA     &lt 4 PERIOD  &mt RCTRL SLASH
+                  &mt LALT ENTER  &mt LGUI ESC  &mt LEFT_SHIFT SPACE    &lt 1 BACKSPACE  &mt RALT DEL  &mt RCMD TAB
             >;
         };
 
         mac_code_layer {
             bindings = <
-  &kp EXCL  &kp AT         &kp HASH            &kp DOLLAR    &kp PERCENT    &kp RA(LEFT)  &kp RG(LEFT)   &kp RG(RIGHT)  &kp RA(RIGHT)  &kp MINUS
-  &trans    &kp AMPERSAND  &kp ASTRK           &tdPar        &tdBrc         &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &kp SEMI
-  &none     &none          &kp CARET           &tdBrk        &none          &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP    &kp END        &kp BACKSLASH
-                           &mt LALT BACKSPACE  &mt LGUI DEL  &caps_word     &kp DEL       &kp RALT       &kp TAB
+  &kp EXCL  &kp AT         &kp HASH            &kp DOLLAR    &kp PERCENT                 &kp RA(LEFT)  &kp RG(LEFT)   &kp RG(RIGHT)  &kp RA(RIGHT)  &kp MINUS
+  &trans    &kp AMPERSAND  &kp ASTRK           &tdPar        &tdBrc                      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &kp SEMI
+  &none     &kp GRAVE      &kp CARET           &tdBrk        &none                       &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP    &kp END        &kp BACKSLASH
+                           &mt LALT BACKSPACE  &mt LGUI DEL  &mt LEFT_SHIFT BACKSPACE    &kp DEL       &kp RALT       &kp TAB
             >;
         };
 
