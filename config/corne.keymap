@@ -128,10 +128,10 @@
 
         mac_code_layer {
             bindings = <
-  &kp EXCL   &kp AT          &kp HASH            &kp DOLLAR            &kp PERCENT              &kp RA(LEFT)  &kp RG(LEFT)   &kp RG(RIGHT)  &kp RA(RIGHT)  &kp MINUS
-  &trans     &kp AMPERSAND   &kp ASTRK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &kp SEMI
-  &kp CARET  &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP    &kp END        &kp BACKSLASH
-                             &mt LALT BACKSPACE  &mt LGUI DEL          &mt LEFT_SHIFT SPACE     &kp DEL       &kp RALT       &kp TAB
+  &kp EXCL   &kp AT          &kp HASH            &kp DOLLAR        &kp PERCENT              &kp RA(LEFT)  &kp RG(LEFT)   &kp RG(RIGHT)  &kp RA(RIGHT)  &kp MINUS
+  &trans     &kp AMPERSAND   &kp ASTRK           &tdPar            &kp RIGHT_PARENTHESIS    &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &kp SEMI
+  &kp CARET  &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP    &kp END        &kp BACKSLASH
+                             &mt LALT BACKSPACE  &mt LGUI DEL      &mt LEFT_SHIFT SPACE     &kp DEL       &kp RALT       &kp TAB
             >;
         };
 
