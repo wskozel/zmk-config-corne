@@ -1,8 +1,6 @@
 # zmk-config-corne
-My ZMK-Config for my 36 key wireless Corne. Built with the intention of limiting as many dual function keys as possible.
+My build for a 36 key Corne
 
-# Build Video
+.json file for Nick Coutsos' Keymap Editor
 
-<a href="https://www.youtube.com/watch?v=MBV2Vrizpe0" target="_blank">
- <img src="http://img.youtube.com/vi/MBV2Vrizpe0/mqdefault.jpg" alt="Watch the build video." width="1200" />
-</a>
+Keymap designed for use with Window Tile Manager, previoulsy Yabai and now Aerospace. This can be found on Layer 3 with the hyper keys
