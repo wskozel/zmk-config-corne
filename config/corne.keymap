@@ -160,16 +160,14 @@
             layers = <0>;
         };
 
-        WS_Left {
-            bindings = <&kp LS(LA(LC(N5)))>;
-            key-positions = <37 13 12>;
-            layers = <0>;
+        leftspace {
+            bindings = <&kp LS(LA(LC(A)))>;
+            key-positions = <13 12>;
         };
 
-        WS_Right {
-            bindings = <&kp LS(LA(LC(N8)))>;
-            key-positions = <37 16 17>;
-            timeout-ms = <100>;
+        rightspace {
+            bindings = <&kp LC(LS(LA(N8)))>;
+            key-positions = <16 17>;
             layers = <0>;
         };
     };
