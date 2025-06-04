@@ -1,5 +1,14 @@
+
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
+  validate_keymap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate keymap.json
+        run: python scripts/validate_keymap.py
+
   build:
+    needs: validate_keymap
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
