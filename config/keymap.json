@@ -7,10 +7,8 @@
     "mac_code_layer",
     "unused_layer",
     "mac_function_layer",
-    "windows_default_layer",
-    "windows_code_layer",
-    "windows_number_layer",
-    "windows_function_layer"
+    "yabai_layer",
+    "function_key_bt_layer"
   ],
   "layers": [
     [
