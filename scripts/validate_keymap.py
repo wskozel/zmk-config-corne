@@ -2,6 +2,13 @@ import json
 from pathlib import Path
 
 KEYMAP_PATH = Path(__file__).resolve().parents[1] / "config" / "keymap.json"
+EXPECTED_LAYER_NAMES = [
+    "mac_default_layer",
+    "mac_code_layer",
+    "mac_function_layer",
+    "yabai_layer",
+    "function_key_bt_layer",
+]
 
 def main():
     with open(KEYMAP_PATH, 'r', encoding='utf-8') as f:
@@ -12,6 +19,11 @@ def main():
 
     if layer_names is None or layers is None:
         raise KeyError("layer_names or layers missing in keymap.json")
+
+    assert layer_names == EXPECTED_LAYER_NAMES, (
+        "layer_names do not match expected order: "
+        f"{layer_names} != {EXPECTED_LAYER_NAMES}"
+    )
 
     assert len(layer_names) == len(layers), (
         f"Mismatch: {len(layer_names)} layer names vs {len(layers)} layers")

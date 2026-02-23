@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-//#include <dt-bindings/zmk/mouse.h>
 // Layers
 
 #define MAC 0
@@ -14,17 +13,8 @@
 #define WIN_CODE 5
 #define WIN_NUM 6
 #define WIN_FUNC 7
+#define YABAI(k) LS(LA(LC(k)))
 
-/*
-&mmv {    
-        time-to-max-speed-ms = <500>;
-        acceleration-exponent=<1>;
-};
-&mwh {    
-        time-to-max-speed-ms = <2000>;
-        acceleration-exponent=<0>;
-}; 
-*/
 // Behavior Overrides
 
 &lt {
@@ -37,20 +27,6 @@
 };
 
 / {
-    //combos {
-    //  compatible = "zmk,combos";
-    //combo_tab {
-    //  timeout-ms = <20>;
-    //  key-positions = <1 2>;
-    //  bindings = <&kp TAB>;
-    //};
-    //  combo_enter {
-    //    timeout-ms = <20>;
-    //  key-positions = <13 14>;
-    //bindings = <&kp ENTER>;
-    //};
-    //};
-
     behaviors {
         bm: bottom_row_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -129,7 +105,7 @@
             bindings = <&tdPar>, <&kp RPAR>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         BraceShift: BraceShift {
@@ -138,7 +114,7 @@
             bindings = <&tdBrc>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         BracketShift: BracketShift {
@@ -147,22 +123,17 @@
             bindings = <&tdBrk>, <&kp RBKT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
-            bindings = <&kp LG(G)>;
-            key-positions = <13 31>;
-            layers = <0>;
-        };
-
         leftspace {
             bindings = <&kp LS(LA(LC(A)))>;
             key-positions = <13 12>;
+            layers = <0>;
         };
 
         rightspace {
@@ -204,10 +175,10 @@
 
         yabai_layer {
             bindings = <
-  &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))         &kp LS(LA(LC(R)))         &kp LS(LA(LC(T)))           &kp LS(LA(LC(Y)))         &kp LS(LA(LC(U)))         &kp LS(LA(LC(I)))         &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))
-  &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))         &kp LS(LA(LC(F)))         &kp LS(LA(LC(G)))           &kp LS(LA(LC(H)))         &kp LS(LA(LC(J)))         &kp LS(LA(LC(K)))         &kp LS(LA(LC(L)))    &to 0
-  &kp LS(LA(LC(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))         &kp LS(LA(LC(V)))         &kp LS(LC(LA(B)))           &kp LS(LA(LC(N)))         &kp LS(LA(LC(M)))         &kp LS(LA(LC(COMMA)))     &kp LS(LA(LC(DOT)))  &kp LS(LA(LC(SLASH)))
-                                        &kp LS(LA(LC(NUMBER_4)))  &kp LS(LA(LC(NUMBER_5)))  &kp LS(LA(LC(NUMBER_6)))    &kp LS(LA(LC(NUMBER_7)))  &kp LS(LA(LC(NUMBER_8)))  &kp LS(LA(LC(NUMBER_9)))
+  &kp YABAI(Q)  &kp YABAI(W)  &kp YABAI(E)         &kp YABAI(R)         &kp YABAI(T)           &kp YABAI(Y)         &kp YABAI(U)         &kp YABAI(I)         &kp YABAI(O)    &kp YABAI(P)
+  &kp YABAI(A)  &kp YABAI(S)  &kp YABAI(D)         &kp YABAI(F)         &kp YABAI(G)           &kp YABAI(H)         &kp YABAI(J)         &kp YABAI(K)         &kp YABAI(L)    &to 0
+  &kp YABAI(Z)  &kp YABAI(X)  &kp YABAI(C)         &kp YABAI(V)         &kp YABAI(B)           &kp YABAI(N)         &kp YABAI(M)         &kp YABAI(COMMA)     &kp YABAI(DOT)  &kp YABAI(SLASH)
+                &kp YABAI(NUMBER_4)               &kp YABAI(NUMBER_5)  &kp YABAI(NUMBER_6)    &kp YABAI(NUMBER_7)  &kp YABAI(NUMBER_8)  &kp YABAI(NUMBER_9)
             >;
         };
 
