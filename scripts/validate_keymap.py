@@ -8,6 +8,7 @@ EXPECTED_LAYER_NAMES = [
     "mac_function_layer",
     "yabai_layer",
     "function_key_bt_layer",
+    "mouse",
 ]
 
 def main():
@@ -27,6 +28,10 @@ def main():
 
     assert len(layer_names) == len(layers), (
         f"Mismatch: {len(layer_names)} layer names vs {len(layers)} layers")
+
+    for index, layer in enumerate(layers):
+        assert len(layer) == 36, (
+            f"Layer {index} has {len(layer)} bindings, expected 36")
 
 if __name__ == "__main__":
     main()
