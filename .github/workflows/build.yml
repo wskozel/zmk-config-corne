@@ -1,3 +1,4 @@
+name: Build ZMK firmware
 
 on: [push, pull_request, workflow_dispatch]
 
@@ -5,10 +6,10 @@ jobs:
   validate_keymap:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Validate keymap.json
         run: python scripts/validate_keymap.py
 
   build:
     needs: validate_keymap
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
