@@ -14,9 +14,9 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: corne_left nice_view_adapter nice_view_gem
-    artifact-name: corne_left-nice_view_gem-nice_nano-zmk
+    shield: corne_left nice_view_adapter ws_nice_view
+    artifact-name: corne_left-ws_nice_view-nice_nano-zmk
     #snippet: studio-rpc-usb-uart
   - board: nice_nano//zmk
-    shield: corne_right nice_view_adapter nice_view_gem
-    artifact-name: corne_right-nice_view_gem-nice_nano-zmk
+    shield: corne_right nice_view_adapter ws_nice_view
+    artifact-name: corne_right-ws_nice_view-nice_nano-zmk
