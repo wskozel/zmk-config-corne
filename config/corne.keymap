@@ -204,6 +204,16 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
+
+        mb3_csu: mb3_csu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MB3_CSU";
+            bindings = <&cursor_scroll_up>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -273,9 +283,9 @@
         mouse {
             display-name = "Mouse";
             bindings = <
-&none  &none  &none           &none  &none            &none             &msc SCRL_UP          &cursor_scroll_up  &msc SCRL_DOWN  &to MAC  &none               &none
-&none  &none  &none           &none  &mb1_csl 0 MB1   &mb2_csd 0 MB2    &cursor_scroll_right  &tog_on 5          &none           &none    &none               &none
-&none  &none  &msc SCRL_LEFT  &none  &msc SCRL_RIGHT  &none             &none                 &none              &none           &to 0    &ht_mouse RALT MB1  &mkp MB2
+&none  &none  &none           &none  &none            &none             &msc SCRL_UP          &mb3_csu 0 MB3  &msc SCRL_DOWN  &to MAC  &none               &none
+&none  &none  &none           &none  &mb1_csl 0 MB1   &mb2_csd 0 MB2    &cursor_scroll_right  &tog_on 5       &none           &none    &none               &none
+&none  &none  &msc SCRL_LEFT  &none  &msc SCRL_RIGHT  &none             &none                 &none           &none           &to 0    &ht_mouse RALT MB1  &mkp MB2
             >;
         };
     };
